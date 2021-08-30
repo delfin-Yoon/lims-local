@@ -1,12 +1,12 @@
-server:
+#server:
 #  port: 8788
-  port: 8080
-  servlet:
-    context-path: /gdl
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
+#  port: 8080
+#  servlet:
+#    context-path: /gdl
+#    encoding:
+#      charset: UTF-8
+#      enabled: true
+#      force: true
     
 #spring:
 #  mvc:
