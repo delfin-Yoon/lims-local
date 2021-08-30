@@ -1,12 +1,13 @@
-#server:
+server:
 #  port: 8788
-#  servlet:
-#    context-path: /gdl
-#    encoding:
-#      charset: UTF-8
-#      enabled: true
-#      force: true
-#    
+  port: 8080
+  servlet:
+    context-path: /gdl
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    
 #spring:
 #  mvc:
 #    view:
@@ -33,3 +34,15 @@
 #  jackson:
 #    serialization:
 #      fail-on-empty-beans: false
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group-id-kafkatest
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
