@@ -1,4 +1,4 @@
-package com.gdl.lims.test;
+package com.gdl.lims.controller;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
