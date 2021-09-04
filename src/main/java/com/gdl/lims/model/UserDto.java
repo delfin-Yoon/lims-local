@@ -3,16 +3,16 @@ package com.gdl.lims.model;
 import lombok.Data;
 
 @Data
-public class User {
+public class UserDto {
 	
 	// 로그인ID
-	private String id;
+	private String userId;
 	
 	// 비밀번호
-	private String password;
+	private String userPwd;
 
 	// 이름
-	private String name;
+	private String userName;
 	
 	// 이메일
 	private String email;

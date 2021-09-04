@@ -7,7 +7,7 @@
 #      charset: UTF-8
 #      enabled: true
 #      force: true
-    
+
 #spring:
 #  mvc:
 #    view:
@@ -35,6 +35,7 @@
 #    serialization:
 #      fail-on-empty-beans: false
 spring:
+  # kafka 설정
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
@@ -46,3 +47,15 @@ spring:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      
+  # mysql DB 설정  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gdl?characterEncoding=UTF-8&useTimezone=true&serverTimezone=Asia/Seoul
+    username: cau
+    password: adsfaewr
+    
+# mybatis 설정
+mybatis: 
+  # dto 패키지 type-aliaes 설정
+  type-aliases-package: com.gdl.lims.model
