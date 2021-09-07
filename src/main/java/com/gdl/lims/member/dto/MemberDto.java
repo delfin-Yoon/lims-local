@@ -1,9 +1,9 @@
-package com.gdl.lims.model;
+package com.gdl.lims.member.dto;
 
 import lombok.Data;
 
 @Data
-public class UserDto {
+public class MemberDto {
 	
 	// 로그인ID
 	private String userId;

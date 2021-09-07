@@ -1,13 +1,13 @@
-package com.gdl.lims.mapper;
+package com.gdl.lims.member.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.gdl.lims.model.UserDto;
+import com.gdl.lims.member.dto.MemberDto;
 
 @Mapper
-public interface UserMapper {
+public interface MemberDao {
 
 	/**
 	 * 회원정보 목록 조회
@@ -15,5 +15,5 @@ public interface UserMapper {
 	 * @param
 	 * @return 회원정보 목록
 	 */
-	List<UserDto> selectUserList();
+	List<MemberDto> selectMemberList();
 }

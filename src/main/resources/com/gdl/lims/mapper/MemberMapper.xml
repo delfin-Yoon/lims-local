@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
    
-<mapper namespace="com.gdl.lims.mapper.UserMapper">
+<mapper namespace="com.gdl.lims.member.dao.MemberDao">
 
 	<!-- 회원정보 목록 조회 -->	
-	<select id="selectUserList" resultType="com.gdl.lims.model.UserDto">
+	<select id="selectUserList" resultType="com.gdl.lims.member.dto.MemberDto">
      	SELECT USER_ID
      		 , USER_PWD
      		 , USER_NAME
