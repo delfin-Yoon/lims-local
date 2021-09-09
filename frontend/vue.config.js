@@ -1,7 +1,17 @@
-module.exports = {  
-    outputDir: "../src/main/resources/static",
-    indexPath: "../static/index.html",
+module.exports = {
     devServer: {
-        proxy: "http://localhost:8080"
-    }
-};
+        overlay: false
+    },
+    // rules: {
+    //     "prettier/prettier": ['error', {
+    //         singleQuote: true,
+    //         semi: true,
+    //         useTabs: true,
+    //         tabWidth: 2,
+    //         trailingComma: 'all',
+    //         printWidth: 80,
+    //         bracketSpacing: true,
+    //         arrowParens: 'avoid',
+    //     }]
+    // },
+}
