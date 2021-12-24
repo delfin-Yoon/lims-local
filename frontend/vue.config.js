@@ -1,7 +1,5 @@
 module.exports = {
-    devServer: {
-        overlay: false
-    },
+  runtimeCompiler: true,
     // rules: {
     //     "prettier/prettier": ['error', {
     //         singleQuote: true,
@@ -14,4 +12,11 @@ module.exports = {
     //         arrowParens: 'avoid',
     //     }]
     // },
+    devServer: {
+        overlay: false
+    },
+
+    transpileDependencies: [
+      'vuetify'
+    ]
 }
